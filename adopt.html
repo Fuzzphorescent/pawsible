@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Adopt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Beth+Ellen&family=Carrois+Gothic+SC&family=Raleway:wght@200&family=Ysabeau+SC:wght@200&display=swap" rel="stylesheet');
+    .container {
+        display: flex;
+        grid-template-columns: 10% 1px 1px 1px;
+        grid-gap: 20px;
+    }
+    
+    .left-column {
+      width: 10%;
+      border-right: 1px solid black;
+  
+      background-color: #f2f2f2; /* Change this to the desired color */
+    }
+    
+    .middle-column {
+      width: 30%;
+      background-color: #ffffff; /* Change this to the desired color */
+    }
+
+    .center-column {
+        width: 30%;
+        background-color: #ffffff;
+    }
+
+    .right-column {
+        width: 30%;
+        background-color: #ffffff;
+    }
+    
+
+    .filter-container {
+      margin-bottom: 20px;
+    }
+    
+    .filter-checkbox {
+      margin-right: 10px;
+    }
+    
+    .animal-item {
+      display: none;
+    }
+    
+    .animal-item.show {
+      display: block;
+    }
+    .pet-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    .pet-card {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    
+    .pet-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    
+    .pet-info {
+      margin-top: 10px;
+    }
+    .navbar {
+        font-family: Raleway;
+          background-color: #F0544F;
+          color: white;
+    }
+
+    .logo {
+            font-family: 'Beth Ellen';
+    }
+
+    header {
+      font-family: 'Beth Ellen';
+    
+    }
+
+</style>
+<body>
+  <!-- The Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-title"></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+    
+  <div class="navbar p-2 ps-3 pe-3">
+    <h1 class="logo">Pawsible</h1>
+    <div id="tabcontainer" class="end-100 d-flex" style="text-align: right;">
+        <a href="" class="ps-5">Adopt</a>
+        <a class="ps-5">Volunteer</a>
+        <a href="" class="ps-5">Report</a>
+        <a href="" class="ps-5">About</a>
+    </div>
+  </div>
+  <header>
+    <h1>Lets Adopt!</h1>
+  </header>
+
+    <div class="container">
+    <div class="left-column">
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-filter"></span> Filter By 
+        </button>
+        <h3>Type</h3>
+       
+        <div class="filter-container">
+            <label>
+              <input type="checkbox" class="filter-checkbox" onchange="filterAnimals('all')" /> All
+            </label>
+            <label>
+              <input type="checkbox" class="filter-checkbox" onchange="filterAnimals('dog')" /> Dogs
+            </label>
+            <label>
+              <input type="checkbox" class="filter-checkbox" onchange="filterAnimals('cat')" /> Cats
+            </label>
+            <!-- Add more breed filter checkboxes as needed -->
+          </div>
+          
+          <div class="animal-item dog">appenfinscher</div>
+          <div class="animal-item dog">pug</div>
+          <div class="animal-item dog">chihuahua</div>
+          <div class="animal-item cat">American shorthair</div>
+          <div class="animal-item cat">Domestic shorthair</div>
+          <div class="animal-item cat">siamese</div>
+    </div>
+    <div class="middle-column">
+        <div class="pet-card">
+          <div class="animal-item dog">Dog 1</div>
+
+            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\Saved Pictures\05-amazon-9-Powerful-Ways-to-Give-to-Charity-Without-Breaking-the-Bank_527124532-Pongsatorn-Singnoy.jpg" alt="Pet 1">
+            <div class="pet-info">
+              <h3>affenpinscher</h3>
+              <p>Puppy . Male</p>
+            </div>
+          </div>
+          <div class="pet-card">
+            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\Saved Pictures\download.jpg" alt="Pet 2">
+            <div class="pet-info">
+              <h3>American Shorthair</h3>
+              <p>Kitten . Female</p>
+            </div>
+          </div>
+          <div class="pet-card">
+            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\Saved Pictures\Triplets.webp" alt="Pet 3">
+            <div class="pet-info">
+              <h3>Domestic Shorthair</h3>
+              <p>kitten .  Female</p>
+            </div>
+          </div>
+          <div class="pet-card">
+            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\hehe.jpeg" alt="Pet 4">
+            <div class="pet-info">
+              <h3>American Shorthair</h3>
+              <p>Kitten . Female</p>
+            </div>
+          </div>
+          <div class="pet-card">
+            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\affenpinscher.jpeg" alt="Pet 5">
+            <div class="pet-info">
+              <h3>affenpinscher</h3>
+              <p>young . Female . puppy</p>
+            </div>
+          </div>
+    </div>
+    <div class="center-column">
+        <div class="pet-card">
+            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\pug.jpeg" alt="Pet 6">
+            <div class="pet-info">
+                <h3>pug & affenpinscher</h3>
+                <p>Puppy . Female </p>
+            </div>
+        </div>
+        <div class="pet-card">
+          <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\chihuahua.jpeg" alt="Pet 7">
+          <div class="pet-info">
+              <h3>Chichuahua</h3>
+              <p>Puppy . Female</p>
+          </div>
+        </div>
+        <div class="pet-card">
+          <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\domestic.jpeg" alt="Pet 8">
+          <div class="pet-info">
+              <h3>Domestic Short Hair</h3>
+              <p>Kitten . Male</p>
+          </div>
+        </div>
+        <div class="pet-card">
+          <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\american.jpeg" alt="Pet 9">
+          <div class="pet-info">
+              <h3>American Shorthair</h3>
+              <p>Kitten . Male </p>
+          </div>
+        </div>
+  </div>
+    <div class="right-column">
+      <div class="pet-card">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\siamese.jpeg" alt="Pet 7">
+        <div class="pet-info">
+            <h3>siamese</h3>
+            <p>Adult . Female</p>
+        </div>
+      </div>
+      <div class="pet-card">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\short.jpeg" alt="Pet 7">
+        <div class="pet-info">
+            <h3>American Shorthair</h3>
+            <p>Kitten . Female</p>
+        </div>
+      </div>
+      <div class="pet-card">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\blade.jpeg" alt="Pet 7">
+        <div class="pet-info">
+            <h3>American Shorthair</h3>
+            <p>Kitten . Male</p>
+        </div>
+      </div>
+      <div class="pet-card">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\hair.jpeg" alt="Pet 7">
+        <div class="pet-info">
+            <h3>Domestic Shorthair</h3>
+            <p>Kitten . Male</p>
+        </div>
+      </div>
+    </div>
+    </div>  
+  </div>
+  <footer class="text-center text-lg-start text-white" style="background-color: #F0544F" >
+
+    <!-- Section: Links  -->
+    <div class="my-5">
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+            <h1 class="my-5"></h1>
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>RESOURCE
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+  
+          
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h1 class="my-5"></h1>
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    </div>
+    
+  
+  
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 The Pawse Foundation
+    </div>
+  </footer>
+  <script>
+    const petsData = [
+      {
+        type: 'dog',
+        name: 'affenpinscher',
+        image: 'C:/Users/ammas/OneDrive/Pictures/Saved Pictures/05-amazon-9-Powerful-Ways-to-Give-to-Charity-Without-Breaking-the-Bank_527124532-Pongsatorn-Singnoy.jpg',
+        description: 'Puppy . Male'
+      },
+      {
+        type: 'cat',
+        name: 'American Shorthair',
+        image: 'C:/Users/ammas/OneDrive/Pictures/Saved Pictures/download.jpg',
+        description: 'Kitten . Female'
+      },
+      {
+        type: 'cat',
+        name: 'American Shorthair',
+        image: "C:\Users\ammas\OneDrive\Pictures\Saved Pictures\Triplets.webp",
+        description: 'Kitten . Female'
+      },
+
+      // Add more pets data as needed
+    ];
+
+    function createPetCard(pet) {
+      const petCard = document.createElement('div');
+      petCard.className = `pet-card ${pet.type}`;
+      petCard.innerHTML = `
+        <img class="pet-image" src="${pet.image}" alt="${pet.name}">
+        <div class="pet-info">
+          <h3>${pet.name}</h3>
+          <p>${pet.description}</p>
+        </div>
+      `;
+      petCard.addEventListener('click', () => {
+        showModal(pet);
+      });
+      return petCard;
+    }
+
+    function showModal(pet) {
+      const modalTitle = document.getElementById('modal-title');
+      const modalBody = document.getElementById('modal-body');
+      modalTitle.textContent = pet.name;
+      modalBody.innerHTML = `<img class="pet-image" src="${pet.image}" alt="${pet.name}">
+          <p>${pet.description}</p>`;
+      $('#myModal').modal('show');
+    }
+
+    function filterAnimals(category) {
+      const animalItems = document.getElementsByClassName('animal-item');
+
+      for (let i = 0; i < animalItems.length; i++) {
+        const item = animalItems[i];
+        const itemCategory = item.classList.contains('dog') ? 'dog' : 'cat';
+
+        if (category === 'all' || itemCategory === category) {
+          item.classList.add('show');
+        } else {
+          item.classList.remove('show');
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const petContainer = document.querySelector('.pet-container');
+      petsData.forEach(pet => {
+        const petCard = createPetCard(pet);
+        petContainer.appendChild(petCard);
+      });
+    });
+
+    function filterAnimals(breed) {
+      const checkboxes = document.getElementsByClassName('filter-checkbox');
+      const animalItems = document.getElementsByClassName('animal-item');
+      
+      if (breed === 'all') {
+        
+        for (let i = 0; i < animalItems.length; i++) {
+          const item = animalItems[i];
+          item.classList.add('show');
+        }
+      } else {
+        
+        for (let i = 0; i < animalItems.length; i++) {
+          const item = animalItems[i];
+          const checkbox = document.querySelector(`input[type="checkbox"][value="${item.classList}"]`);
+          
+          if (checkbox.checked) {
+            item.classList.add('show');
+          } else {
+            item.classList.remove('show');
+          }
+        }
+      }
+    }
+    function toggleDropdown() {
+      const dropdownContent = document.getElementById('filterDropdownContent');
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    }
+    
+   
+  
+  
+</script>
+
+</body>
+</html> 
