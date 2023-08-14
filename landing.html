@@ -1,0 +1,204 @@
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Beth+Ellen&family=Carrois+Gothic+SC&family=Raleway:wght@200&family=Ysabeau+SC:wght@200&display=swap" rel="stylesheet');
+        
+        .navbar {
+        font-family: Raleway;
+          background-color: #F0544F;
+          color: white;
+        }
+
+        dd:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        dt {
+            display: list-item;
+            list-style-type: number;
+            list-style-position: inside;
+        }
+        .logo {
+            font-family: 'Beth Ellen';
+        }
+        img {
+            object-fit: contain;
+        } 
+        h2, h3 {
+            color: F0544F;
+        }
+        .font-unna {
+            font-family: Unna;
+        }
+        .orange {
+            color: #ff9100;
+        }
+        .bgorange {
+            background-color: #ff9100;
+        }
+        #tabcontainer a {
+            color: #FFFFFF; 
+            font-family: Barlow;
+            text-decoration: none; 
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        #tabcontainer a:hover {
+             
+            color: #FFFFFF; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar p-2 ps-3 pe-3">
+        <h1 class="logo">Pawsible</h1>
+        <div id="tabcontainer" class="fs-4 end-100 d-flex">
+            <a href="" class="ps-5">Adopt</a>
+            <a href="" class="ps-5">Report</a>
+            <a href="" class="ps-5">About</a>
+        </div>
+    </div>
+    <div id="banner" class="d-flex position-relative">
+        <img src="background.jpg">  
+        <div id="textbox" class="p-5 position-absolute bottom-0 w-25 start-0 d-flex flex-column justify-content-between h-75">
+            <h2 class="fs-2 font-unna orange">Changing Destinies, One Rescue at a Time: 
+                See How Pawsible Is Reshaping Lives.</h2>
+            <p class="text-white font-unna">Since 2014, Pawsible has been a part of the stories of 3000+ stray, abused, injured, and abandoned animals. Adopt an animal and make a difference.</p>
+            <button type="button" class="btn btn-warning w-75"><a href="#howitworks">Find Out How It Works</a></button>
+        </div>
+    </div>
+    <div id="content" class="bg-body-secondary">
+        <div id="container" class="bg-white w-50 p-5 mx-auto container">
+            <div id="statbox" class="row row-cols-2 m-5 text-center">
+                <div id="statistic1" class="p-2 col">
+                    <div id="image w-25"></div>
+                    <div id="text">
+                        <h3>12,000+ Animals Saved</h3>
+                        <p>Since 2003, more than 1200 animal lives have been saved.</p>
+                    </div>
+                </div>
+                <div id="statistic2" class="p-2 col">
+                    <div id="image w-25"></div>
+                    <div id="text">
+                        <h3>7000 Exams Performed</h3>
+                        <p>In a single year, our medical staff performed 3,200 exams and vaccinated 4,200 animals.</p>
+                    </div>
+                </div>
+                <div id="statistic3" class="p-2 col">
+                    <div id="image w-25"></div>
+                    <div id="text">
+                        <h3>780 Pets Adopted</h3>
+                        <p>More than 700 pets found homes from our adoption centers.</p>
+                    </div>
+                </div>
+                <div id="statistic4" class="p-2 col">
+                    <div id="image w-25"></div>
+                    <div id="text">
+                        <h3>170 Programs</h3>
+                        <p>Reaching students, advancing and enhancing learning.</p>
+                    </div>
+                </div>
+        
+            </div>
+            <div id="howitworks" class="pb-5">
+                <h1 class="pb-5">How It Works</h1>
+                <div id="hiwtextbox" class="grid gap-3">
+                    <dl>
+                        <dt>Search Pawsible to find "The One"</dt>
+                        <dd>Take some time to read the profile of each pet, get to know their personality and find out if they are the right fit for you and your lifestyle. You’ll need to consider things such as size, age, activity levels, grooming requirements and training needs.</li>
+                        <dt>Get to know our rescue</dt>
+                        <dd>If you’re new to rescue, it’ll help to learn a little about us. It’s important to build trust and ensure that you can feel a connection with your rescue group.</li>
+                        <dt>Let us know you're interested</dt>
+                        <dd>Make your application. This gives us all the info we need to help you find the pet that’s right for you and your home. It may be that the pet you’re interested in has been adopted, so with the information you provide the rescue group may be able to suggest another suitable pet.</li>
+                        <dt>Meet and Greet</dt>
+                        <dd>Once your application has been processed, the rescue group will contact you to arrange a time for you and your family to meet the pet. We may also request a house check, just to make sure your fences are escape-proof and there are no potentially dangerous situations your new pet may get into.</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="featured" class="pb-5 gap-3">
+                <h1 class="pb-5">Featured Animals</h1>
+                <div id="cardcontainer" class="d-flex flex-row justify-content-between">
+                    <div class="card" style="width: 15rem; height: 20rem;">
+                        <img src="background.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h3>Luna, 19</h3>  
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 15rem; height: 20rem;">
+                        <img src="background.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h3>Luna, 19</h3>  
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 15rem; height: 20rem;">
+                        <img src="background.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h3>Luna, 19</h3>  
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1></h1>
+            <div id="button"></div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bgorange text-muted" style="background-color: rgb(242, 242, 242);">
+
+        <!-- Section: Links  -->
+        <div class="my-5">
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+                <h1 class="my-5"></h1>
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3 text-secondary"></i>RESOURCE
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h1 class="my-5"></h1>
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        </div>
+        <!-- Section: Links  -->
+      
+      
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+          © 2023 The Pawse Foundation
+        </div>
+      </footer>
+</body>
