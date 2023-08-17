@@ -33,10 +33,10 @@
     }
     
     .left-column {
-      width: 10%;
+      width: 20%;
       border-right: 1px solid black;
   
-      background-color: #f2f2f2; /* Change this to the desired color */
+     /* background-color: #fefefe; /* Change this to the desired color */
     }
     
     .middle-column {
@@ -109,6 +109,28 @@
     
     }
 
+    h3, p {
+      text-align: center;
+    }
+    @media (max-width: 950px) {
+            .container {
+                display: block;
+            }
+            .left-column, .middle-column, .center-column, .right-column {
+                width: 100%;
+                border-right: none;
+            }
+            .box {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .navbar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
 </style>
 <body>
   <!-- The Modal -->
@@ -139,7 +161,7 @@
   </header>
 
   <div class="container">
-    <div class="left-column">
+    <div class="left-column" style="text-align: left;">
         <button type="button" class="btn btn-default btn-sm">
           <span class="glyphicon glyphicon-filter"></span> Filter By 
         </button>
@@ -253,7 +275,7 @@
     <div class="right-column">
       
         <div class="box">
-        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\siamese.jpeg" alt="Pet 7">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\siamese.jpeg" alt="Pet 10">
         <div class="pet-info">
             <h3>siamese</h3>
             <p>Adult . Female</p>
@@ -262,7 +284,7 @@
       
       
         <div class="box">
-        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\short.jpeg" alt="Pet 7">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\short.jpeg" alt="Pet11">
         <div class="pet-info">
             <h3>American Shorthair</h3>
             <p>Kitten . Female</p>
@@ -271,7 +293,7 @@
       
       
         <div class="box">
-        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\blade.jpeg" alt="Pet 7">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\blade.jpeg" alt="Pet 12">
         <div class="pet-info">
             <h3>American Shorthair</h3>
             <p>Kitten . Male</p>
@@ -280,7 +302,7 @@
       
       
         <div class="box">
-        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\hair.jpeg" alt="Pet 7">
+        <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\hair.jpeg" alt="Pet 13">
         <div class="pet-info">
             <h3>Domestic Shorthair</h3>
             <p>Kitten . Male</p>
