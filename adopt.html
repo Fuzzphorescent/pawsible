@@ -16,6 +16,21 @@
         grid-template-columns: 10% 1px 1px 1px;
         grid-gap: 20px;
     }
+    .box{
+        width: 250px;
+        margin: 0 10px;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+        transition: 0.5s;
+    }
+    .box img{
+        display: block;
+        width:100%;
+        border-radius: 5px;
+    }
+    .box:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
     
     .left-column {
       width: 10%;
@@ -123,7 +138,7 @@
     <h1>Lets Adopt!</h1>
   </header>
 
-    <div class="container">
+  <div class="container">
     <div class="left-column">
         <button type="button" class="btn btn-default btn-sm">
           <span class="glyphicon glyphicon-filter"></span> Filter By 
@@ -150,108 +165,132 @@
           <div class="animal-item cat">Domestic shorthair</div>
           <div class="animal-item cat">siamese</div>
     </div>
-    <div class="middle-column">
-        <div class="pet-card">
-          <div class="animal-item dog">Dog 1</div>
-
-            <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\Saved Pictures\05-amazon-9-Powerful-Ways-to-Give-to-Charity-Without-Breaking-the-Bank_527124532-Pongsatorn-Singnoy.jpg" alt="Pet 1">
+      <div class="middle-column">
+          
+            <div class="box">
+            <img class="pet-image" src="C:\Users\ammas\Downloads\affenpinscher-1.jpg" alt="pet 1">
             <div class="pet-info">
               <h3>affenpinscher</h3>
               <p>Puppy . Male</p>
             </div>
-          </div>
-          <div class="pet-card">
+            </div>
+          
+          
+            <div class="box">
             <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\Saved Pictures\download.jpg" alt="Pet 2">
             <div class="pet-info">
               <h3>American Shorthair</h3>
               <p>Kitten . Female</p>
             </div>
-          </div>
-          <div class="pet-card">
+            </div>
+          
+          
+            <div class="box">
             <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\Saved Pictures\Triplets.webp" alt="Pet 3">
             <div class="pet-info">
               <h3>Domestic Shorthair</h3>
               <p>kitten .  Female</p>
             </div>
-          </div>
-          <div class="pet-card">
+            </div>
+          
+          
+            <div class="box">
             <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\hehe.jpeg" alt="Pet 4">
             <div class="pet-info">
               <h3>American Shorthair</h3>
               <p>Kitten . Female</p>
             </div>
-          </div>
-          <div class="pet-card">
+            </div>
+          
+          
+            <div class="box">
             <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\affenpinscher.jpeg" alt="Pet 5">
             <div class="pet-info">
               <h3>affenpinscher</h3>
               <p>young . Female . puppy</p>
             </div>
-          </div>
+            </div>
+          
     </div>
     <div class="center-column">
-        <div class="pet-card">
+        
+          <div class="box">
             <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\pug.jpeg" alt="Pet 6">
             <div class="pet-info">
                 <h3>pug & affenpinscher</h3>
                 <p>Puppy . Female </p>
             </div>
-        </div>
-        <div class="pet-card">
+          </div>
+        
+        
+          <div class="box">
           <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\chihuahua.jpeg" alt="Pet 7">
           <div class="pet-info">
               <h3>Chichuahua</h3>
               <p>Puppy . Female</p>
           </div>
-        </div>
-        <div class="pet-card">
+          </div>
+        
+        
+          <div class="box">
           <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\domestic.jpeg" alt="Pet 8">
           <div class="pet-info">
               <h3>Domestic Short Hair</h3>
               <p>Kitten . Male</p>
           </div>
-        </div>
-        <div class="pet-card">
+          </div>
+        
+        
+          <div class="box">
           <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\american.jpeg" alt="Pet 9">
           <div class="pet-info">
               <h3>American Shorthair</h3>
               <p>Kitten . Male </p>
           </div>
-        </div>
-  </div>
+          </div>
+    </div>   
+  
     <div class="right-column">
-      <div class="pet-card">
+      
+        <div class="box">
         <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\siamese.jpeg" alt="Pet 7">
         <div class="pet-info">
             <h3>siamese</h3>
             <p>Adult . Female</p>
         </div>
-      </div>
-      <div class="pet-card">
+        </div>
+      
+      
+        <div class="box">
         <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\short.jpeg" alt="Pet 7">
         <div class="pet-info">
             <h3>American Shorthair</h3>
             <p>Kitten . Female</p>
         </div>
-      </div>
-      <div class="pet-card">
+        </div>
+      
+      
+        <div class="box">
         <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\blade.jpeg" alt="Pet 7">
         <div class="pet-info">
             <h3>American Shorthair</h3>
             <p>Kitten . Male</p>
         </div>
-      </div>
-      <div class="pet-card">
+        </div>
+      
+      
+        <div class="box">
         <img class="pet-image" src="C:\Users\ammas\OneDrive\Pictures\hair.jpeg" alt="Pet 7">
         <div class="pet-info">
             <h3>Domestic Shorthair</h3>
             <p>Kitten . Male</p>
         </div>
-      </div>
+        </div>
+      
     </div>
     </div>  
   </div>
-  <footer class="text-center text-lg-start text-white" style="background-color: #F0544F" >
+  <footer class="text-center p-4 text-lg-start text-white" style="background-color: #F0544F" >
 
     <!-- Section: Links  -->
     <div class="my-5">
@@ -302,28 +341,7 @@
     </div>
   </footer>
   <script>
-    const petsData = [
-      {
-        type: 'dog',
-        name: 'affenpinscher',
-        image: 'C:/Users/ammas/OneDrive/Pictures/Saved Pictures/05-amazon-9-Powerful-Ways-to-Give-to-Charity-Without-Breaking-the-Bank_527124532-Pongsatorn-Singnoy.jpg',
-        description: 'Puppy . Male'
-      },
-      {
-        type: 'cat',
-        name: 'American Shorthair',
-        image: 'C:/Users/ammas/OneDrive/Pictures/Saved Pictures/download.jpg',
-        description: 'Kitten . Female'
-      },
-      {
-        type: 'cat',
-        name: 'American Shorthair',
-        image: "C:\Users\ammas\OneDrive\Pictures\Saved Pictures\Triplets.webp",
-        description: 'Kitten . Female'
-      },
-
-      // Add more pets data as needed
-    ];
+   
 
     function createPetCard(pet) {
       const petCard = document.createElement('div');
@@ -402,8 +420,20 @@
       dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
     }
     
-   
-  
+    function filterAnimals(category) {
+    const animalItems = document.getElementsByClassName('animal-item');
+    
+    for (let i = 0; i < animalItems.length; i++) {
+      const item = animalItems[i];
+      const itemCategory = item.classList.contains('dog') ? 'dog' : 'cat';
+
+      if (category === 'all' || itemCategory === category) {
+        item.classList.add('show');
+      } else {
+        item.classList.remove('show');
+      }
+    }
+  } 
   
 </script>
 
