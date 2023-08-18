@@ -19,7 +19,7 @@ function validateForm(event) {
       alert('Please select the type of animal.');
       return;
     }
-  
+
     if (breed === '') {
       alert('Please enter the breed of the animal.');
       return;

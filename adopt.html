@@ -11,7 +11,25 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Beth+Ellen&family=Carrois+Gothic+SC&family=Raleway:wght@200&family=Ysabeau+SC:wght@200&display=swap" rel="stylesheet');
-    .container {
+  #tabcontainer a {
+            color: #FFFFFF; 
+            text-decoration: none; 
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        #tabcontainer a:hover {
+             
+            color: #FFFFFF; 
+        }
+        .special-text {
+           font-family: sans-serif; 
+           font-size: 28px; 
+           font-weight: bold; 
+           color: #ff6600; 
+}
+.container {
         display: flex;
         grid-template-columns: 10% 1px 1px 1px;
         grid-gap: 20px;
@@ -150,10 +168,9 @@
   <div class="navbar p-2 ps-3 pe-3">
     <h1 class="logo">Pawsible</h1>
     <div id="tabcontainer" class="end-100 d-flex" style="text-align: right;">
-        <a href="" class="ps-5">Adopt</a>
-        <a class="ps-5">Volunteer</a>
-        <a href="" class="ps-5">Report</a>
-        <a href="" class="ps-5">About</a>
+      <a href="adopt.html" class="ps-5 pe-5">Adopt</a>
+      <a href="Rehome.html" class="ps-5 pe-5">Report</a>
+      <a href="petabout.html" class="ps-5 pe-5">About</a>
     </div>
   </div>
   <header>
@@ -312,7 +329,7 @@
     </div>
     </div>  
   </div>
-  <footer class="text-center p-4 text-lg-start text-white" style="background-color: #F0544F" >
+  <footer class="text-center text-lg-start text-white" style="background-color:#F0544F";>
 
     <!-- Section: Links  -->
     <div class="my-5">
@@ -324,38 +341,31 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
             <h1 class="my-5"></h1>
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3 text-secondary"></i>RESOURCE
+              <i class="fas fa-gem me-3 text-secondary"></i>RESOURCES
             </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
-            </p>
+            <p>Why Adopt an Animal</p>
+            <p>Rehome a Pet or Report a Found Animal</p>
+            <p>How You Can Volunteer for Shelters in Your Area</p>
           </div>
-          <!-- Grid column -->
   
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-  
-          
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h1 class="my-5"></h1>
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-home me-3 text-secondary"></i> The Pawse Foundation, Thrissur, Kerala 695010</p>
             <p>
               <i class="fas fa-envelope me-3 text-secondary"></i>
-              info@example.com
+              info@thepawsefoundation.com
             </p>
-            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 91 9446440167</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 91 8282409044</p>
           </div>
-          
+          <!-- Grid column -->
         </div>
-        
+        <!-- Grid row -->
       </div>
     </section>
     </div>
-    
+    <!-- Section: Links  -->        
   
   
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
